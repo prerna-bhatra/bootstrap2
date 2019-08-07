@@ -1,0 +1,62 @@
+body
+{
+	
+}
+#nav
+{
+	background-color: #8766ff;
+	
+}
+#nav a
+{
+	color: white;
+}
+#ins
+{
+	background: #8766ff;
+	border-left: 1px solid purple;
+ border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+	padding: 70px 70px 70px 70px;
+}
+#login
+{
+	background:white;
+	border-left: 1px solid purple;
+	border-bottom-right-radius: 25px;
+  border-top-right-radius:25px;
+	padding: 0px 0px 0px 0px;
+}
+#log-body
+{
+
+	margin-top: 60px;
+	color: white;
+}
+#log-body label
+{
+	color: black;
+}
+#log-body form
+{
+	margin: 82px 82px 82px 82px;
+}
+#log-body #submit
+{
+background: green;
+}
+#ins #h1
+{
+	font-size:60px;
+	text-align: center;
+}
+#ins #h2
+{
+	font-size:35px;
+	text-align: center;
+}
+#log-body ol li
+{
+	font-size: 30px;
+}
+
