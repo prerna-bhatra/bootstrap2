@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta charset="utf-8">
+	  	<meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	  <link rel="stylesheet" type="text/css" href="style.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<title>Login</title>
+	<title></title>
+</head>
+<body>
+	<nav class="navbar navbar-default" style="background-color:" id="nav">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <a class="navbar-brand" href="#">Novous</a>
+	  </div>
+	</nav>
+	<div class="container">
+		<div class="row" id="cont">
+			<div class="col-md-2 4" id="col4" >
+				<h5>Sports</h5>
+				<div class="shapec">
+					
+				</div>
+				<div class="btns" >
+				<button class="btn " id="4" onclick="sel4()" >Select</button>
+			   </div>
+			</div>
+			<div class="col-md-2 0" id="col0">
+				<h5>Movies</h5>
+				<div class="shapec">
+					
+				</div>
+				<div class="btns">
+				<button class="btn " id="0" onclick="sel0()">Select</button>
+			</div>
+			</div>
+			<div class="col-md-2 1" id="col1">
+				<h5>Technology</h5>
+				<div class="shapec">
+					
+				</div>
+				<div class="btns">
+				<button class="btn " id="1" onclick="sel1()" >Select</button>
+				</div>
+			</div>
+			<div class="col-md-2 2" id="col2">
+				<h5>Politics</h5>
+				<div class="shapec">
+					
+				</div>
+				<div class="btns">
+				<button class="btn " id="2" onclick="sel2()" >Select</button>
+				</div>
+			</div>
+			<div class="col-md-2 3" id="col3">
+				<h5>General</h5>
+				<div class="shapec">
+					<area shape="circle" coords="155,93,59" >
+				</div>
+				<div class="btns">
+				<button class="btn " id="3" onclick="sel3()" >Select</button>
+				</div>
+			</div>
+		</div>
+		<div>
+		<button class="btn btn-md" id="next" style="background-color:lime;position: absolute;left:1200px;top:400px;">Next</button>		
+	</div>
+	<div class="btn btn-md" id="other" style="float:left;background-color: lime;position: absolute;top:400px;left:550px;
+	" >
+		<input type="button" class="btn btn-primary" value="Select another option" onClick="window.location.href=window.location.href">
+	</div>
+	</div>
+	<script type="text/javascript">
+		/*	function sel4() 
+		{
+		 //document.getElementById("col").style.width = "300px";
+		 //document.getElementById("col").style.height = "300px";
+
+		 //document.getElementsByClassName("0").style.transform="scale(1.1)";
+		 document.getElementById("col4").style.transform="scale(1.1)";
+		  document.getElementById("0").disabled = true;
+		 document.getElementById("3").disabled = true;
+		 document.getElementById("1").disabled = true;
+		 document.getElementById("2").disabled = true;
+		  document.getElementById('4').innerHTML = 'Selected';
+ 		 document.getElementById("4").style.background="lawngreen";
+ 		 document.getElementById("next").style.display = "block";
+ 		 e.preventDefault();
+        }
+ 		 
+			function sel0() 
+		{
+		 //document.getElementById("col").style.width = "300px";
+		 //document.getElementById("col").style.height = "300px";
+
+		 //document.getElementsByClassName("0").style.transform="scale(1.1)";
+		 document.getElementById("col0").style.transform="scale(1.1)";
+		 document.getElementById("4").disabled = true;
+		 document.getElementById("3").disabled = true;
+		 document.getElementById("1").disabled = true;
+		 document.getElementById("2").disabled = true;
+		  document.getElementById('0').innerHTML = 'Selected';
+ 		 document.getElementById("0").style.background="lawngreen";
+ 		 document.getElementById("next").style.display = "block";
+ 		 e.preventDefault();
+ 		
+
+       }
+       		function sel1() 
+		{
+		 //document.getElementById("col").style.width = "300px";
+		 //document.getElementById("col").style.height = "300px";
+
+		 //document.getElementsByClassName("0").style.transform="scale(1.1)";
+		 document.getElementById("col1").style.transform="scale(1.1)";
+		 document.getElementById("4").disabled = true;
+		 document.getElementById("3").disabled = true;
+		 document.getElementById("0").disabled = true;
+		 document.getElementById("2").disabled = true;
+		  document.getElementById('1').innerHTML = 'Selected';
+ 		 document.getElementById("1").style.background="lawngreen";
+ 		 document.getElementById("next").style.display = "block";
+ 		 e.preventDefault();
+       }
+       		function sel2() 
+		{
+		 //document.getElementById("col").style.width = "300px";
+		 //document.getElementById("col").style.height = "300px";
+
+		 //document.getElementsByClassName("0").style.transform="scale(1.1)";
+		 document.getElementById("col2").style.transform="scale(1.1)";
+		  document.getElementById("4").disabled = true;
+		 document.getElementById("3").disabled = true;
+		 document.getElementById("1").disabled = true;
+		 document.getElementById("0").disabled = true;
+		  document.getElementById('2').innerHTML = 'Selected';
+ 		 document.getElementById("2").style.background="lawngreen";
+ 		 document.getElementById("next").style.display = "block";
+ 		 e.preventDefault();
+ 		
+       }
+       		function sel3() 
+		{
+		 //document.getElementById("col").style.width = "300px";
+		 //document.getElementById("col").style.height = "300px";
+
+		 //document.getElementsByClassName("3").style.transform="scale(1.1)";
+		 document.getElementById("col3").style.transform="scale(1.1)";
+		 document.getElementById("4").disabled = true;
+		 document.getElementById("0").disabled = true;
+		 document.getElementById("1").disabled = true;
+		 document.getElementById("2").disabled = true;
+		 document.getElementById('3').innerHTML = 'Selected';
+ 		 document.getElementById("3").style.background="lawngreen";
+ 		 document.getElementById("next").style.display = "block";
+ 		 e.preventDefault();
+       }*/
+	</script>
+	<script>
+			$(document).ready(function(){
+			  $("#0").click(function(){
+			  	 //document.getElementById("col3").style.transform="scale(1.1)";
+				 document.getElementById("4").disabled = true;
+				 document.getElementById("3").disabled = true;
+				 document.getElementById("1").disabled = true;
+				 document.getElementById("2").disabled = true;
+			  	document.getElementById("col0").style.transform="scale(1.1)";
+			    document.getElementById('0').innerHTML = 'Selected';
+ 				 document.getElementById("0").style.background="lawngreen";
+ 		 		document.getElementById("next").style.display = "block";
+ 		 		document.getElementById("other").style.display = "block";
+ 		 		e.preventDefault();
+ 		 	 });
+			});
+
+			$(document).ready(function(){
+			  $("#4").click(function(){
+			  	 //document.getElementById("col3").style.transform="scale(1.1)";
+				 document.getElementById("3").disabled = true;
+				 document.getElementById("0").disabled = true;
+				 document.getElementById("1").disabled = true;
+				 document.getElementById("2").disabled = true;
+			  	document.getElementById("col4").style.transform="scale(1.1)";
+			    document.getElementById('4').innerHTML = 'Selected';
+ 				 document.getElementById("4").style.background="lawngreen";
+ 		 		document.getElementById("next").style.display = "block";
+ 		 		document.getElementById("other").style.display = "block";
+ 		 		e.preventDefault();
+ 		 		 });
+			});
+
+			$(document).ready(function(){
+			  $("#1").click(function(){
+			  	 //document.getElementById("col3").style.transform="scale(1.1)";
+				 document.getElementById("4").disabled = true;
+				 document.getElementById("0").disabled = true;
+				 document.getElementById("3").disabled = true;
+				 document.getElementById("2").disabled = true;
+			  	document.getElementById("col1").style.transform="scale(1.1)";
+			    document.getElementById('1').innerHTML = 'Selected';
+ 				 document.getElementById("1").style.background="lawngreen";
+ 		 		document.getElementById("next").style.display = "block";
+ 		 		document.getElementById("other").style.display = "block";
+ 		 		e.preventDefault();
+ 		 		});
+			});
+			$(document).ready(function(){
+			  $("#2").click(function(){
+			  	 //document.getElementById("col3").style.transform="scale(1.1)";
+					 document.getElementById("4").disabled = true;
+					 document.getElementById("0").disabled = true;
+					 document.getElementById("1").disabled = true;
+					 document.getElementById("3").disabled = true;
+			  	document.getElementById("col2").style.transform="scale(1.1)";
+			    document.getElementById('2').innerHTML = 'Selected';
+ 				 document.getElementById("2").style.background="lawngreen";
+ 		 		document.getElementById("next").style.display = "block";
+ 		 		document.getElementById("other").style.display = "block";
+ 		 		e.preventDefault();
+ 		 		});
+			});
+			$(document).ready(function(){
+			  $("#3").click(function(){
+			  	 //document.getElementById("col3").style.transform="scale(1.1)";
+				 document.getElementById("4").disabled = true;
+		 		document.getElementById("0").disabled = true;
+		 		document.getElementById("1").disabled = true;
+		 		document.getElementById("2").disabled = true;
+			  	document.getElementById("col3").style.transform="scale(1.1)";
+			    document.getElementById('3').innerHTML = 'Selected';
+ 				 document.getElementById("3").style.background="lawngreen";
+ 		 		document.getElementById("next").style.display = "block";
+ 		 		document.getElementById("other").style.display = "block";
+ 		 		e.preventDefault();
+			  });
+			});
+    </script>
+</body>
+</html>
